@@ -26,8 +26,9 @@ class _BootScreenState extends State<BootScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white12,
-      body: Center(child: Image.asset('assets/logo/logo.png'),)
-    );
+        backgroundColor: Colors.white12,
+        body: Center(
+          child: Image.asset('assets/logo/logo.png'),
+        ));
   }
 }

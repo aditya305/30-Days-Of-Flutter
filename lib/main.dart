@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: BootScreen(),
 
       routes: <String,WidgetBuilder>{
-        //'/BootScreen' : (BuildContext context) => new BootScreen(),
+        '/BootScreen' : (BuildContext context) => new BootScreen(),
         '/LoginScreen' : (BuildContext context) => new Login(),
       },
     );
