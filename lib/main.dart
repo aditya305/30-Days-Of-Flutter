@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'DayByDay',
       debugShowCheckedModeBanner: false,
-      // theme: ThemeData.dark(),
+      theme: ThemeData.dark(),
       home: BootScreen(),
 
       routes: <String,WidgetBuilder>{
