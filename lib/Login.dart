@@ -9,31 +9,31 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
-      body: SafeArea(
-        top: true,
-        bottom: true,
-        left: true,
-        right: true,
-        child: Container(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+      body: ListView(
+        children: [
+          Stack(
             children: <Widget>[
-              RichText(
-                text: TextSpan(
-                    style: TextStyle(
-                        color: Colors.white),
-                    children: <TextSpan>[
-                      TextSpan(
-                          text: 'Welcome to DayByDay',
-                          style: TextStyle(fontSize: 36, color: Colors.black)),
-                    ]),
+              Container(
+                height: MediaQuery.of(context).size.height - 20.0,
+                width: MediaQuery.of(context).size.width,
+                color: Colors.black,
+              ),
+              Positioned(
+                top: MediaQuery.of(context).size.height /2,
+                child: Container(
+                  height: MediaQuery.of(context).size.height /2 - 20.0,
+                  width: MediaQuery.of(context).size.width,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.only(topRight: Radius.circular(40.0),
+                    topLeft: Radius.circular(40.0)                    
+                    ),
+                    color: Colors.white,
+                  ),
+                )
               ),
             ],
           ),
-        ),
+        ],
       ),
     );
   }
