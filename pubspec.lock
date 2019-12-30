@@ -29,6 +29,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "1.0.5"
+  bottom_personalized_dot_bar:
+    dependency: "direct main"
+    description:
+      name: bottom_personalized_dot_bar
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.2"
   charcode:
     dependency: transitive
     description:
@@ -64,6 +71,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.1.2"
+  dotted_border:
+    dependency: transitive
+    description:
+      name: dotted_border
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "1.0.4"
   english_words:
     dependency: "direct main"
     description:

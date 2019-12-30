@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:myapp/Login.dart';
 import 'package:myapp/bootscreen.dart';
+import 'package:myapp/home.dart';
 
 
 Future<void> main() async {
@@ -27,6 +28,7 @@ class MyApp extends StatelessWidget {
       routes: <String,WidgetBuilder>{
         '/BootScreen' : (BuildContext context) => new BootScreen(),
         '/LoginScreen' : (BuildContext context) => new Login(),
+        '/home' : (BuildContext context) => new Home(),
       },
     );
   }
